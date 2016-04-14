@@ -40,6 +40,8 @@ BODY {
     top: 18px;
     width: 12px;
     height: 0; }
+  .tree-item.tree-file:after {
+    width: 28px; }
   .tree-item.tree-folder:before {
     position: absolute;
     font-size: 11px;
@@ -49,8 +51,6 @@ BODY {
     left: 5px; }
   .tree-item.tree-folder.m-open:before {
     content: '▼'; }
-  .tree-item.tree-file:after {
-    width: 28px; }
 
 .tree-item_header {
   padding: 10px 20px 10px 48px;

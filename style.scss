@@ -13,11 +13,6 @@ BODY {
 	margin: 40px 100px;
 	padding: 20px;
 }
-.tree-folder {
-	&.m-open {
-
-	}
-}
 .tree-list {
 	position: relative;
 	padding-left: 22px;
@@ -54,6 +49,11 @@ BODY {
 			height: 0;
 		}
 	}
+	&.tree-file {
+		&:after {
+			width: 28px;
+		}
+	}
 	&.tree-folder {
 		&:before {
 			position: absolute;
@@ -65,11 +65,6 @@ BODY {
 		}
 		&.m-open:before {
 			content: '▼';
-		}
-	}
-	&.tree-file {
-		&:after {
-			width: 28px;
 		}
 	}
 }
