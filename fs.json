@@ -1,0 +1,102 @@
+{
+	"id": "067e6162-3b6f-4ae2-a171-2470b63dff00",
+	"name": "app",
+	"type": 0,
+	"children": [
+		{
+			"id": "94eb290b-d12d-49eb-87c3-73d7b1f0fc01",
+			"name": "dist",
+			"type": 0,
+			"children": [
+				{
+					"id": "531be407-d605-4645-af66-1017b1e08e56",
+					"name": "app.js",
+					"type": 1,
+					"children": []
+				},
+				{
+					"id": "5304ace7-f41f-4b71-b7ee-42ec0bbc540a",
+					"name": "app.css",
+					"type": 1,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "4c798e54-160f-4e0a-99b9-71457493a863",
+			"name": "styles",
+			"type": 0,
+			"children": [
+				{
+					"id": "a506713d-f71e-4619-b572-c22068a50c00",
+					"name": "main.sass",
+					"type": 1,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "9ab6bdf1-b2ed-4752-a850-010cbd6dda6f",
+			"name": "js",
+			"type": 0,
+			"children": [
+				{
+					"id": "d9e3ed95-f2ce-48c7-a762-71438a740fc0",
+					"name": "models",
+					"type": 0,
+					"children": [
+						{
+							"id": "fc077e94-2902-4fe9-afaf-0a1a72d4a8dc",
+							"name": "mainModel.js",
+							"type": 1,
+							"children": []
+						},
+						{
+							"id": "15f012a5-f1db-4788-a3b5-5ea5681d95ef",
+							"name": "secondModel.js",
+							"type": 1,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "bbc53476-bcfb-4a38-8765-a011c87c9790",
+					"name": "templates",
+					"type": 0,
+					"children": []
+				},
+				{
+					"id": "a565961c-3478-4795-a7e3-63388a4d89e4",
+					"name": "views",
+					"type": 0,
+					"children": [
+						{
+							"id": "3cb05846-79f6-4354-bd7f-0b3f39cd2248",
+							"name": "mainView.js",
+							"type": 1,
+							"children": []
+						},
+						{
+							"id": "be7edc40-a970-4fda-b633-14c551f8a37b",
+							"name": "secondView.js",
+							"type": 1,
+							"children": []
+						}
+					]
+				},
+				{
+					"id": "04b65190-37ee-46df-9b31-6cd6c251d636",
+					"name": "entry.js",
+					"type": 1,
+					"children": []
+				}
+			]
+		},
+		{
+			"id": "87da65f7-fbd0-43c8-882b-616bd7d2d1df",
+			"name": "readme.md",
+			"type": 1,
+			"children": []
+		}
+	]
+}

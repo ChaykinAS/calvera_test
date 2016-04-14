@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+BODY {
+	font: 13px 'Open Sans', Arial, sans-serif;
+	background: #2b2b2b;
+	color: #ffffff;
+	padding: 0;
+	margin: 0;
+}
+
+.tree {
+	background: #3c3f41;
+	margin: 40px 100px;
+	padding: 20px;
+}
+.tree-folder {
+	&.m-open {
+
+	}
+}
+.tree-list {
+	position: relative;
+	padding-left: 22px;
+	display: none;
+	&:before {
+		border-left: 1px solid #646769;
+		position: absolute;
+		display: block;
+		content: '';
+		width: 0;
+		bottom: 20px;
+		left: 10px;
+		top: -6px;
+	}
+	&.m-empty:before {
+		display: none;
+	}
+	.tree-folder.m-open > & {
+		display: block;
+	}
+}
+
+.tree-item {
+	position: relative;
+	.tree-list > & {
+		&:after {
+			border-top: 1px solid #646769;
+			position: absolute;
+			display: block;
+			content: '';
+			left: -12px;
+			top: 18px;
+			width: 12px;
+			height: 0;
+		}
+	}
+	&.tree-folder {
+		&:before {
+			position: absolute;
+			font-size: 11px;
+			display: block;
+			content: '►';
+			top: 10px;
+			left: 5px;
+		}
+		&.m-open:before {
+			content: '▼';
+		}
+	}
+	&.tree-file {
+		&:after {
+			width: 28px;
+		}
+	}
+}
+.tree-item_header {
+	padding: 10px 20px 10px 48px;
+	position: relative;
+	&:before {
+		font-family: 'Material Icons';
+		position: absolute;
+		font-size: 18px;
+		display: block;
+		left: 24px;
+		top: 10px;
+	}
+	.tree-folder > & {
+		&:before {
+			content: 'folder';
+			color: #bc9562;
+		}
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+	}
+	.tree-file > & {
+		&:before {
+			content: 'description';
+			color: #4891bb;
+		}
+	}
+}
+.tree-item_empty-text {
+ 	font-style: italic;
+	padding: 10px 20px;
+	opacity: .6;
+ }
